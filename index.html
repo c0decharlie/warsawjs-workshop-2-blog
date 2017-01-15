@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <script type="text/html" id="post-add-form-component">
+        <form action="#" id="add-post-form" class="post-form col-md-8 col-md-push-2">
+            <label for="">Title</label>
+            <input class="text-input" type="text" name="title" placeholder="Title">
+            <textarea class="textarea-input" name="content" id=""></textarea>
+            <input id="form-submit" type="submit" class="btn btn-primary" name="submit" placeholder="Zapisz">
+        </form>
+    </script>
+
+    <script type="text/html" id="post-component">
+        <div class="post col-md-12">
+            <h2 class="post-author"><a href="#!/posts/{{id}}">{{title}}</a></h2>
+            <p class="post-content">{{content}}</p>
+        </div>
+    </script>
+
+
+    <div id="wrapper" class="wrapper col-md-8 col-md-push-2">
+        <h1 class="post-title">Workshop blog</h1>
+        <div id="post-form"></div>
+        <div id="post-body" class="col-md-8 col-md-push-2"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <scritp src="https://wzrd.in/standalone/concat-stream@latest"></scritp>
+    <script src="https://wzrd.in/standalone/uuid"></script>
+    <script src="node_modules/mustache/mustache.js"></script>
+    <script src="node_modules/grapnel/dist/grapnel.min.js"></script>
+    <script src="node_modules/super-event-emitter/dist/super-event-emitter.js"></script>
+    <script src="scripts/name-space.js"></script>
+    <script src="scripts/components/post-add-form-component.js"></script>
+    <script src="scripts/components/post-component.js"></script>
+    <script src="scripts/models/post-list-model.js"></script>
+    <script src="scripts/models/post-model.js"></script>
+    <script src="scripts/controllers/controller.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

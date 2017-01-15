@@ -1,0 +1,33 @@
+form {
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+form label {
+    display: block;
+    width:100%;
+}
+
+.post h2 {
+    border-bottom:1px solid #ddd;
+}
+
+.post-title {
+    text-align: center;
+    margin:15px 0;
+}
+
+.post-form .text-input {
+    display: block;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.post-form .textarea-input {
+    display: block;
+    margin-bottom:10px;
+    height:80px;
+    width:100%;
+    resize: none;
+}
