@@ -3,7 +3,7 @@
         constructor(data) {
             this.$template = document.querySelector('#post-component');
             this.templateConetent = this.$template.innerHTML;
-            this.$container = document.querySelector('#post-body');
+            this.$container = document.querySelector('#post-wrapper');
             this.render(data, this.templateConetent);
         }
 

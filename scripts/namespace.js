@@ -1,6 +1,6 @@
 window.blog = {
     models: {},
     components: {},
-    controllers:{},
+    controllers: {},
     runtime: new EventEmitter()
-}
+};
